@@ -33,13 +33,17 @@
         }
 
         .ad-left, .ad-right {
-            display: none;
+            display: block;
+            text-align: center;
         }
 
-        @media (min-width: 1024px) {
+        @media (max-width: 600px) {
             .ad-left, .ad-right {
-                display: block;
-                text-align: center;
+                display: none;
+            }
+
+            .main-wrapper {
+                flex-direction: column;
             }
         }
 
