@@ -23,6 +23,26 @@
             padding: 20px;
         }
 
+        .main-wrapper {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .ad-left, .ad-right {
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            .ad-left, .ad-right {
+                display: block;
+                text-align: center;
+            }
+        }
+
         .ad-top, .ad-bottom {
             width: 100%;
             max-width: 728px;
@@ -119,12 +139,24 @@
         <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     </div>
 
-    <div class="container">
-        <h1>로또 번호 생성기</h1>
-        <div id="numbersDisplay"></div>
-        <div class="button-group">
-            <button onclick="generateLotto()">번호 생성</button>
-            <button onclick="generateMultiple()">5개 생성</button>
+    <div class="main-wrapper">
+        <div class="ad-left">
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit = "DAN-a2jU3ggoTIFe2pU6" data-ad-width = "160" data-ad-height = "600"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
+
+        <div class="container">
+            <h1>로또 번호 생성기</h1>
+            <div id="numbersDisplay"></div>
+            <div class="button-group">
+                <button onclick="generateLotto()">번호 생성</button>
+                <button onclick="generateMultiple()">5개 생성</button>
+            </div>
+        </div>
+
+        <div class="ad-right">
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit = "DAN-a2jU3ggoTIFe2pU6" data-ad-width = "160" data-ad-height = "600"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
         </div>
     </div>
 
